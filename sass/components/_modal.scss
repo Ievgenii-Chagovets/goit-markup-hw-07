@@ -30,13 +30,9 @@
   align-items: center;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.x-button:hover {
-  cursor: pointer;
-}
-.x-button:hover .close-buttom__icon {
-  fill: #2196f3;
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -52,6 +48,10 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .x-button:hover & {
+    fill: #2196f3;
+    cursor: pointer;
+  }
 }
 .contact-form {
   padding: 40px 40px 40px 40px;
@@ -90,16 +90,10 @@
   transition-property: border color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-form__input:hover {
-  border-color: #2196f3;
-  cursor: pointer;
-}
-.input__wrap:hover .modal-form__icon {
-  fill: #2196f3;
-}
-.modal-form__input:focus ~ .modal-form__icon {
-  fill: #2196f3;
+  &:hover {
+    border-color: #2196f3;
+    cursor: pointer;
+  }
 }
 .modal-form__icon {
   position: absolute;
@@ -109,6 +103,12 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .input__wrap:hover & {
+    fill: #2196f3;
+  }
+  .modal-form__input:focus ~ & {
+    fill: #2196f3;
+  }
 }
 .input__wrap {
   position: relative;
@@ -126,19 +126,20 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    border-color: #2196f3;
+    cursor: pointer;
+  }
+  &::placeholder {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
-.modal-form__comment:hover {
-  border-color: #2196f3;
-  cursor: pointer;
-}
-.modal-form__comment::placeholder {
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
+
 .checkbox__input {
   visibility: hidden;
   width: 1px;
@@ -159,6 +160,10 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
+  .checkbox__input:checked + & > .check-box__icon {
+    background-color: #2196f3;
+    border: none;
+  }
 }
 .check-box__icon {
   width: 16px;
@@ -169,10 +174,10 @@
   justify-content: center;
   align-items: center;
   margin-right: 8px;
-}
-.checkbox__input:checked + .check-box__label > .check-box__icon {
-  background-color: #2196f3;
-  border: none;
+  .checkbox__input:checked + .check-box__label > & {
+    background-color: #2196f3;
+    border: none;
+  }
 }
 .contract-condition__link {
   margin-left: 2px;

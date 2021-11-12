@@ -29,6 +29,13 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &:hover {
+    border-color: #2196f3;
+    cursor: pointer;
+  }
 }
 .ya-co-company__icon {
   fill: #afb1b8;
@@ -37,6 +44,10 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .our-client__icon:hover &,
+  .our-client__icon:focus & {
+    fill: #2196f3;
+  }
 }
 .tagline-here-company__icon {
   fill: #afb1b8;
@@ -45,6 +56,10 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .our-client__icon:hover &,
+  .our-client__icon:focus & {
+    fill: #2196f3;
+  }
 }
 .company__icon {
   fill: #afb1b8;
@@ -53,6 +68,10 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .our-client__icon:hover &,
+  .our-client__icon:focus & {
+    fill: #2196f3;
+  }
 }
 .foster-peters-company__icon {
   fill: #afb1b8;
@@ -61,6 +80,10 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .our-client__icon:hover &,
+  .our-client__icon:focus & {
+    fill: #2196f3;
+  }
 }
 .brand-company__icon {
   fill: #afb1b8;
@@ -69,6 +92,10 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .our-client__icon:hover &,
+  .our-client__icon:focus & {
+    fill: #2196f3;
+  }
 }
 .tag-line-company__icon {
   fill: #afb1b8;
@@ -77,9 +104,10 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.our-clients__item:not(:last-child) {
-  margin-right: 30px;
+  .our-client__icon:hover &,
+  .our-client__icon:focus & {
+    fill: #2196f3;
+  }
 }
 .our-client__icon {
   display: flex;
@@ -87,44 +115,4 @@
   align-items: center;
   width: 100%;
   height: 100%;
-}
-.our-clients__item:hover {
-  border-color: #2196f3;
-  cursor: pointer;
-}
-.our-client__icon:hover .ya-co-company__icon {
-  fill: #2196f3;
-}
-.our-client__icon:hover .tagline-here-company__icon {
-  fill: #2196f3;
-}
-.our-client__icon:hover .company__icon {
-  fill: #2196f3;
-}
-.our-client__icon:hover .foster-peters-company__icon {
-  fill: #2196f3;
-}
-.our-client__icon:hover .brand-company__icon {
-  fill: #2196f3;
-}
-.our-client__icon:hover .tag-line-company__icon {
-  fill: #2196f3;
-}
-.our-client__icon:focus .ya-co-company__icon {
-  fill: #2196f3;
-}
-.our-client__icon:focus .tagline-here-company__icon {
-  fill: #2196f3;
-}
-.our-client__icon:focus .company__icon {
-  fill: #2196f3;
-}
-.our-client__icon:focus .foster-peters-company__icon {
-  fill: #2196f3;
-}
-.our-client__icon:focus .brand-company__icon {
-  fill: #2196f3;
-}
-.our-client__icon:focus .tag-line-company__icon {
-  fill: #2196f3;
 }

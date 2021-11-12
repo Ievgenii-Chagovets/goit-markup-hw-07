@@ -23,9 +23,9 @@
 .our-job__list {
   position: relative;
   width: 370px;
-}
-.our-job__list:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .our-job__picture {
   display: block;

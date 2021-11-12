@@ -8,9 +8,9 @@
 .values__item {
   width: 270px;
   height: 251px;
-}
-.values__item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .values__icon {
   display: flex;

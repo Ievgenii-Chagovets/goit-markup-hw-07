@@ -65,6 +65,10 @@
 .footer-social-links__icon {
   margin: 12px;
   fill: #ffffff;
+  .footer-social-links__name:focus & {
+    margin: 12px;
+    fill: #ffffff;
+  }
 }
 .footer-social-links__list {
   display: flex;
@@ -84,18 +88,11 @@
 .footer-social-links__name {
   height: 44px;
   display: block;
-}
-.footer-social-links__name:hover {
-  background-color: #2196f3;
-  border-radius: 50%;
-}
-.footer-social-links__name:focus {
-  background-color: #2196f3;
-  border-radius: 50%;
-}
-.footer-social-links__name:focus .footer-social-links__icon {
-  margin: 12px;
-  fill: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    border-radius: 50%;
+  }
 }
 .subscription {
   margin-left: 93px;
@@ -152,10 +149,11 @@
   align-items: center;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    cursor: pointer;
+  }
 }
-.subscription-button:hover {
-  cursor: pointer;
-}
+
 .subscription-button__text {
   margin-right: 10px;
 }
