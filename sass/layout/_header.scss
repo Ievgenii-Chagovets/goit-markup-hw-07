@@ -14,24 +14,17 @@
 .web {
   color: #2196f3;
 }
-.logo {
-  font-family: "Oleo Script", cursive;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #212121;
-  text-decoration: none;
+.header-logo {
   margin-right: 93px;
 }
 .navigation-list {
   display: flex;
+  .navigation-list__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
-.navigation-item:not(:last-child) {
-  margin-right: 50px;
-}
-.navigation-link {
+
+.navigation-list__link {
   display: block;
   position: relative;
   font-family: "Roboto";
@@ -73,37 +66,11 @@
 }
 .contacts-list {
   display: flex;
-}
-.contacts-item {
-  display: flex;
-}
-.contacts-icon-email {
-  display: inline-block;
-  margin-right: 10px;
-  vertical-align: middle;
-  fill: #757575;
-  transition-property: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  .email:hover &,
-  .email:focus & {
-    fill: var(--accent-color);
+  .contacts-list__item {
+    display: flex;
   }
 }
-.contacts-icon-phone {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-  fill: #757575;
-  transition-property: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  .phone:hover &,
-  .phone:focus & {
-    fill: var(--accent-color);
-  }
-}
-.email {
+.contacts-list__email {
   position: relative;
   display: flex;
   font-family: "Roboto";
@@ -123,7 +90,20 @@
     color: var(--accent-color);
   }
 }
-.phone {
+.contacts-list__icon-email {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  fill: #757575;
+  transition-property: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .contacts-list__email:hover &,
+  .contacts-list__email:focus & {
+    fill: var(--accent-color);
+  }
+}
+.contacts-list__phone {
   display: flex;
   font-family: "Roboto";
   font-weight: 500;
@@ -139,5 +119,18 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+}
+.contacts-list__icon-phone {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  fill: #757575;
+  transition-property: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .contacts-list__phone:hover &,
+  .contacts-list__phone:focus & {
+    fill: var(--accent-color);
   }
 }

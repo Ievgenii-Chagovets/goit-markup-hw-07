@@ -1,3 +1,9 @@
+.footer-section {
+  font-family: "Roboto";
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .logo-footer {
   display: flex;
   margin-bottom: 20px;
@@ -12,13 +18,7 @@
   color: #ffffff;
   margin-bottom: 9px;
 }
-.footer-section {
-  font-family: "Roboto";
-  background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.footer__contact {
+.adress__contact {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -51,7 +51,7 @@
   margin-left: 70px;
   padding-top: 12px;
 }
-.footer-social-links__text {
+.footer-social-links__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -113,7 +113,7 @@
 .subscription__window {
   display: flex;
 }
-.subscription-form {
+.subscription__form {
   width: 358px;
   height: 50px;
   background: transparent;
@@ -123,7 +123,7 @@
   border-radius: 4px;
   margin-right: 12px;
 }
-.subscription-form__text {
+.subscription__form-text {
   font-family: Roboto;
   font-weight: 400;
   font-size: 16px;
@@ -132,7 +132,7 @@
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.subscription-button {
+.subscription__button {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
@@ -154,15 +154,15 @@
   }
 }
 
-.subscription-button__text {
+.subscription__button-text {
   margin-right: 10px;
 }
-.subscription-button__icon {
+.subscription__button-icon {
   display: flex;
   fill: #ffffff;
 }
 
-.subscription-form__input {
+.subscription__form-input {
   font-family: Roboto;
   font-weight: 400;
   font-size: 16px;

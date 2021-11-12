@@ -65,15 +65,7 @@ ul {
   color: #2196f3;
 }
 
-.logo {
-  font-family: "Oleo Script", cursive;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #212121;
-  text-decoration: none;
+.header-logo {
   margin-right: 93px;
 }
 
@@ -81,11 +73,11 @@ ul {
   display: flex;
 }
 
-.navigation-item:not(:last-child) {
+.navigation-list .navigation-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.navigation-link {
+.navigation-list__link {
   display: block;
   position: relative;
   font-family: "Roboto";
@@ -101,11 +93,11 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-link:hover, .navigation-link:focus {
+.navigation-list__link:hover, .navigation-list__link:focus {
   color: var(--accent-color);
 }
 
-.navigation-link.current::after {
+.navigation-list__link.current::after {
   content: "";
   display: block;
   position: absolute;
@@ -131,41 +123,11 @@ ul {
   display: flex;
 }
 
-.contacts-item {
+.contacts-list .contacts-list__item {
   display: flex;
 }
 
-.contacts-icon-email {
-  display: inline-block;
-  margin-right: 10px;
-  vertical-align: middle;
-  fill: #757575;
-  transition-property: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.email:hover .contacts-icon-email,
-.email:focus .contacts-icon-email {
-  fill: var(--accent-color);
-}
-
-.contacts-icon-phone {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-  fill: #757575;
-  transition-property: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.phone:hover .contacts-icon-phone,
-.phone:focus .contacts-icon-phone {
-  fill: var(--accent-color);
-}
-
-.email {
+.contacts-list__email {
   position: relative;
   display: flex;
   font-family: "Roboto";
@@ -182,11 +144,26 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.email:hover, .email:focus {
+.contacts-list__email:hover, .contacts-list__email:focus {
   color: var(--accent-color);
 }
 
-.phone {
+.contacts-list__icon-email {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  fill: #757575;
+  transition-property: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-list__email:hover .contacts-list__icon-email,
+.contacts-list__email:focus .contacts-list__icon-email {
+  fill: var(--accent-color);
+}
+
+.contacts-list__phone {
   display: flex;
   font-family: "Roboto";
   font-weight: 500;
@@ -201,8 +178,34 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.phone:hover, .phone:focus {
+.contacts-list__phone:hover, .contacts-list__phone:focus {
   color: var(--accent-color);
+}
+
+.contacts-list__icon-phone {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  fill: #757575;
+  transition-property: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-list__phone:hover .contacts-list__icon-phone,
+.contacts-list__phone:focus .contacts-list__icon-phone {
+  fill: var(--accent-color);
+}
+
+.logo {
+  font-family: "Oleo Script", cursive;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-decoration: none;
 }
 
 .our-projects {
@@ -336,6 +339,13 @@ ul {
   color: var(--second-text-color);
 }
 
+.footer-section {
+  font-family: "Roboto";
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .logo-footer {
   display: flex;
   margin-bottom: 20px;
@@ -352,14 +362,7 @@ ul {
   margin-bottom: 9px;
 }
 
-.footer-section {
-  font-family: "Roboto";
-  background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer__contact {
+.adress__contact {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -396,7 +399,7 @@ ul {
   padding-top: 12px;
 }
 
-.footer-social-links__text {
+.footer-social-links__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -468,7 +471,7 @@ ul {
   display: flex;
 }
 
-.subscription-form {
+.subscription__form {
   width: 358px;
   height: 50px;
   background: transparent;
@@ -479,7 +482,7 @@ ul {
   margin-right: 12px;
 }
 
-.subscription-form__text {
+.subscription__form-text {
   font-family: Roboto;
   font-weight: 400;
   font-size: 16px;
@@ -489,7 +492,7 @@ ul {
   color: #ffffff;
 }
 
-.subscription-button {
+.subscription__button {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
@@ -508,20 +511,20 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscription-button:hover {
+.subscription__button:hover {
   cursor: pointer;
 }
 
-.subscription-button__text {
+.subscription__button-text {
   margin-right: 10px;
 }
 
-.subscription-button__icon {
+.subscription__button-icon {
   display: flex;
   fill: #ffffff;
 }
 
-.subscription-form__input {
+.subscription__form-input {
   font-family: Roboto;
   font-weight: 400;
   font-size: 16px;
